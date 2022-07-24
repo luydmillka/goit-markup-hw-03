@@ -178,7 +178,7 @@ img {
   margin-bottom: -30px;
 }
 .projects__item {
-  flex-basis: calc((100%-90px) / 3);
+  flex-basis: calc((100% - 90px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -285,7 +285,7 @@ img {
   margin-bottom: -30px;
 }
 .portfolio__item {
-  flex-basis: calc(100% / 3 - 30px);
+  flex-basis: calc((100% - 90px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
