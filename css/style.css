@@ -58,11 +58,10 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 .header__navigation {
@@ -72,6 +71,9 @@ img {
 .menu__links,
 .contacts {
   display: flex;
+}
+.contacts {
+  margin-left: auto;
 }
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -150,13 +152,12 @@ img {
 }
 .about__list {
   display: flex;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 .about__item {
-  flex-basis: calc((100% - 120px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
+}
+.about__item:not(:last-child) {
   margin-right: 30px;
-  margin-bottom: 30px;
 }
 .item__title {
   margin-bottom: 10px;
@@ -174,13 +175,12 @@ img {
 
 .projects__list {
   display: flex;
-  margin-right: -30px;
-  margin-bottom: -30px;
 }
 .projects__item {
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
+}
+.projects__item:not(:last-child) {
   margin-right: 30px;
-  margin-bottom: 30px;
 }
 
 /* team */
@@ -193,7 +193,7 @@ img {
   margin-bottom: -30px;
 }
 .team__employee {
-  flex-basis: calc((100%-120px) / 4);
+  flex-basis: calc((100% - 120px) / 4);
   margin-right: 30px;
   margin-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -281,16 +281,15 @@ img {
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  gap: 30px;
 }
 .portfolio__item {
   flex-basis: calc((100% - 90px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
 .portfolio__box {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .portfolio__title {
   margin-bottom: 4px;
